@@ -1,32 +1,27 @@
 {
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "prettier": "^3.3.3"
+  },
   "name": "blog",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sonTungN/nodejs-blog.git"
   },
-  "keywords": [
-    "F8",
-    "Blog",
-    "F8",
-    "Nodejs"
-  ],
   "author": "Tung Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sonTungN/nodejs-blog/issues"
   },
   "homepage": "https://github.com/sonTungN/nodejs-blog#readme",
-  "description": "",
-  "dependencies": {
-    "express": "^4.19.2",
-    "prettier": "^3.3.3"
-  },
   "devDependencies": {
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4"
