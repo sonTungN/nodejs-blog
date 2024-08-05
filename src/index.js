@@ -4,11 +4,14 @@ const path = require("path");
 const morgan = require("morgan");
 const app = express();
 
-//2
+// STATIC FILE WITH SCSS
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // MORGAN
-app.use(morgan("combined"));
+// app.use(morgan("combined"));
 
 //  TEMPLATE ENGINE
 app.engine(
@@ -27,6 +30,16 @@ app.get("/", function (req, res) {
 
 app.get("/news", function (req, res) {
   res.render("news");
+});
+
+app.get("/search", function (req, res) {
+  res.render("search");
+});
+
+app.post("/search", function (req, res) {
+  console.log(req.body);
+
+  res.send("");
 });
 
 app.listen(3000, () => console.log("Server started at http://localhost:3000"));
