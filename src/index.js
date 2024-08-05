@@ -4,6 +4,9 @@ const path = require("path");
 const morgan = require("morgan");
 const app = express();
 
+//2
+app.use(express.static(path.join(__dirname, "public")));
+
 // MORGAN
 app.use(morgan("combined"));
 
