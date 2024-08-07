@@ -5,6 +5,10 @@ const morgan = require("morgan");
 const app = express();
 
 const route = require("./routes/index");
+const db = require("./config/db");
+
+// CONNECT TO DB
+db.connect().then((r) => {});
 
 // STATIC FILE WITH SCSS
 app.use(express.static(path.join(__dirname, "public")));
