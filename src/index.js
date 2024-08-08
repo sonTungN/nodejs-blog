@@ -8,7 +8,7 @@ const route = require("./routes/index");
 const db = require("./config/db");
 
 // CONNECT TO DB
-db.connect().then((r) => {});
+db.connect().then(() => {});
 
 // STATIC FILE WITH SCSS
 app.use(express.static(path.join(__dirname, "public")));
