@@ -8,6 +8,7 @@ const Course = new Schema({
   description: { type: String, maxlength: 255 },
   image: { type: String, maxlength: 255 },
   slug: { type: String, maxlength: 255 },
+  videoId: { type: String, maxlength: 255 },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
