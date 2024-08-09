@@ -8,6 +8,7 @@ const route = require("./routes/index");
 const db = require("./config/db");
 
 const methodOverride = require("method-override");
+
 // CONNECT TO DB
 db.connect().then(() => {});
 
@@ -30,8 +31,11 @@ app.engine(
     },
   }),
 );
+
+app.use(methodOverride("_method"));
+
 app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "resources", "views"));
+app.set("views", path.join(__dirname, "resources/views"));
 
 // ROUTES INIT
 route(app);
