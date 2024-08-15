@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/sonTungN/nodejs-blog#readme",
   "devDependencies": {
-    "mongoose-slug-generator": "^1.0.4",
     "mongoose-slug-updater": "^3.3.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
