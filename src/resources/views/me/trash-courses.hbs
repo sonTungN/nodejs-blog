@@ -9,7 +9,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Course Name</th>
-      <th scope="col">Created At</th>
+      <th scope="col">Deleted At</th>
       <th></th>
     </tr>
     </thead>
@@ -93,7 +93,6 @@
     let deleteForm = document.forms["delete-form"];
     const btnDeleteCourse = document.getElementById("buttonDeleteCourse");
     const btnRestore = $(".btn-restore");
-
     $('#deleteCourseModal').on('show.bs.modal', function (event) {
       const button = $(event.relatedTarget);
       courseId = button.data("id");
@@ -103,7 +102,6 @@
       deleteForm.submit();
     };
 
-    // Restore button click
     btnRestore.click(function (e) {
       e.preventDefault();
       const restoreID = $(this).data("id");
