@@ -1,5 +1,8 @@
 <div class="mt-4">
-  <h3>My Courses</h3>
+  <div>
+    <h3>My Courses</h3>
+    <a href="/me/trash/courses">Trash Bin</a>
+  </div>
 
   <table class="table mt-4">
     <thead>
@@ -25,6 +28,13 @@
               data-target="#deleteCourseModal"
               data-id="{{this._id}}"
             >Delete</a>
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="5" class="text-center">
+            You haven't posted any courses yet.
+            <a href="/courses/create">Post your course!</a>
           </td>
         </tr>
       {{/each}}

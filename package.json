@@ -6,6 +6,7 @@
     "lint-staged": "^15.2.8",
     "method-override": "^3.0.0",
     "mongoose": "^8.5.2",
+    "mongoose-delete": "^1.0.2",
     "prettier": "^3.3.3"
   },
   "name": "blog",
